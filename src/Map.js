@@ -6,7 +6,7 @@ class Map extends Component {
   componentDidMount() {
     const app = this.props.app;
     mapbox.accessToken =
-      'pk.eyJ1IjoibGluZGVsdWh1YW5nIiwiYSI6ImNra21yZWwzajBteHkyb3J6Mjh0Yzdqb3gifQ.MJ3Sy9eXrZWGqHJlDh_sGw';
+      'pk.eyJ1IjoibGluZGVsdWh1YW5nIiwiYSI6ImNra242a2NrMTI4bWUybmxhaDJiY2lhMjkifQ.qeoVefdW7LiaBoMsUS3sVQ';
     var map = new mapbox.Map({
       container: 'map',
       style: app.state.style,
