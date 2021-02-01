@@ -24,7 +24,7 @@ class Search extends Component {
     event.preventDefault();
 
     const accessToken =
-      'pk.eyJ1IjoibGluZGVsdWh1YW5nIiwiYSI6ImNra21yZWwzajBteHkyb3J6Mjh0Yzdqb3gifQ.MJ3Sy9eXrZWGqHJlDh_sGw';
+      'pk.eyJ1IjoibGluZGVsdWh1YW5nIiwiYSI6ImNra242a2NrMTI4bWUybmxhaDJiY2lhMjkifQ.qeoVefdW7LiaBoMsUS3sVQ';
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.value}.json?access_token=${accessToken}`;
 
     fetch(url)
