@@ -3,10 +3,16 @@ import './PlacesPanel.css';
 import mapbox from 'mapbox-gl';
 
 class PlaceItem extends Component {
+  goTo() {
+    const app = this.props.app;
+    const map = app.state.map;
+    const place = this.props.place;
+    map.flyTo({center: [place.longitude, place.latitude]});
+  }
+
   render() {
     const app = this.props.app;
     const map = app.state.map;
-
     const place = this.props.place;
 
     if (map) {
@@ -25,7 +31,11 @@ class PlaceItem extends Component {
       marker.addTo(map);
     }
 
-    return <div className="place-item">{place.name}</div>;
+    return (
+      <div className="place-item" onClick={() => this.goTo()}>
+        {place.name}
+      </div>
+    );
   }
 }
 
