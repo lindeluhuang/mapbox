@@ -1,0 +1,22 @@
+.places {
+  position: fixed;
+  top: 52px; 
+  left: 20px;
+  z-index: 1;
+}
+
+.place-item, .no-results {
+  background-color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 180px;
+}
+
+.place-item:hover {
+  background-color: #ffffcc;
+}
+
+.no-results {
+  color: #999999;
+}
